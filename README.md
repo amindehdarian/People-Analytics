@@ -1,5 +1,5 @@
-# peopleAnalytics
-Tools and methods for advanced people/ HR/ workforce analytics 
+# Strategic People Analytics
+## Tools and methods for advanced analysis 
 
 [Go to the End](#end)
 <a name="top"></a>
