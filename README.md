@@ -22,27 +22,13 @@ By combining these two dimensions, we have four categories:
 
 To check the significance of this relationship, we conduct a chi-square test. It compares the frequencies observed with the expected frequency. If there is no relationship, we can conclude the observed difference could be gained by chance. 
 
-The equation is:
-
-_X^2 = Σ ((observed_value - expected_value)^2 / expected_value)_ 
-
 The chi-square statistic is calculated as:
 
 $X^2 = \sum \frac{(O - E)^2}{E}$
 
-Where:
+where:
 - $O$ is the observed value
 - $E$ is the expected value
-
-The chi-square statistic is calculated as:
-
-$$
-X^2 = \sum \frac{(O - E)^2}{E}
-$$
-
-Where:
-- \( O \) is the observed value
-- \( E \) is the expected value
 
 
 
