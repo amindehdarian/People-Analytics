@@ -30,6 +30,12 @@ where:
 - $O$ is the observed value
 - $E$ is the expected value
 
+then the chi-squared statistic checked against a distribution with known properties along with the degrees of freedom, calculated as (r-1)(c-1) where r and c are our data dimensions, to find the p-value. 
+
+In our example, 
+
+The chi-square analysis is used when the relationship between two categorical variables is analyzed. For more than two categorical variables, loglinear analysis should be done. 
+
 
 
 [Go to the Top](#top)
