@@ -3,6 +3,8 @@
 #setting the default working directory
 install.packages("rstudioapi")
 library(rstudioapi)
+library(rmarkdown)
+library(knitr)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 rm(list=ls())
@@ -15,6 +17,7 @@ colnames(Data)
 Freq1 <- table(Data$managing)
 Freq1
 prop.table(Freq1)
+kable(Freq1)
 
 Freq2 <- table(Data$gender)
 Freq2
