@@ -1,4 +1,4 @@
-# Chi-square test
+### Chi-square test
 
 #setting the default working directory
 install.packages("rstudioapi")
