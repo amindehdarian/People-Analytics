@@ -6,10 +6,11 @@
 
 In this part, a review of tools and methods is provided with code examples for each one, and then detailed examples are presented in the sub-sections. 
 
+<a name="toc"></a>
 ## Table of Contents
-<a name="top"></a>
-[Chi-square analysis](#end)
+[Chi-square analysis](#1)
 
+<a name="1"></a>
 ## Chi-square analysis
 When both Dependent Variable (DV) and the Independent Variable (IV) are categorical (binary, nominal or ordinal), and there is only one IV, then Chi-square analysis is used.
 
@@ -42,5 +43,5 @@ The chi-square analysis is used when the relationship between two categorical va
 
 ## Logistic Regression Analysis
 
-[Go to the Table of Contents](#top)
+[Back to the Table of Contents](#toc)
 <a name="end"></a>
