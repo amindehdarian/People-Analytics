@@ -2,9 +2,13 @@
 **Tools and methods for advanced analysis** 
 
 [Go to the End](#end)
-<a name="top"></a>
 
-In this part, a review of tools and methods is provided with code examples for each one, and then detailed examples are presented in the subßsections. 
+
+In this part, a review of tools and methods is provided with code examples for each one, and then detailed examples are presented in the sub-sections. 
+
+## Table of Contents
+<a name="top"></a>
+[Chi-square analysis](#end)
 
 ## Chi-square analysis
 When both Dependent Variable (DV) and the Independent Variable (IV) are categorical (binary, nominal or ordinal), and there is only one IV, then Chi-square analysis is used.
@@ -32,11 +36,11 @@ where:
 
 then the chi-squared statistic checked against a distribution with known properties along with the degrees of freedom, calculated as (r-1)(c-1) where r and c are our data dimensions, to find the p-value. 
 
-In our example, 
+*** Explanation of the example
 
 The chi-square analysis is used when the relationship between two categorical variables is analyzed. For more than two categorical variables, loglinear analysis should be done. 
 
+## Logistic Regression Analysis
 
-
-[Go to the Top](#top)
+[Go to the Table of Contents](#top)
 <a name="end"></a>
