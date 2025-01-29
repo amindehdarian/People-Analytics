@@ -8,6 +8,7 @@ In this part, a review of tools and methods is provided with code examples for e
 
 ## Table of Contents
 - [Chi-square analysis](#chi-square-analysis)
+- [Logistic Regression Analysis](#logistic-regression-analysis)
 
 ## Chi-square analysis
 When both Dependent Variable (DV) and the Independent Variable (IV) are categorical (binary, nominal or ordinal), and there is only one IV, then Chi-square analysis is used.
@@ -39,6 +40,10 @@ then the chi-squared statistic checked against a distribution with known propert
 
 The chi-square analysis is used when the relationship between two categorical variables is analyzed. For more than two categorical variables, loglinear analysis should be done. 
 
+[Back to the Table of Contents](#table-of-contents)
+
 ## Logistic Regression Analysis
+
+Logistic regression is used when the DV is binary.
 
 [Back to the Table of Contents](#table-of-contents)
