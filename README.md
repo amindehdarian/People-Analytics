@@ -15,7 +15,7 @@ When both Dependent Variable (DV) and the Independent Variable (IV) are categori
 
 It analyzes if the frequencies and proportions across particular categories are related to changes in another category. 
 
-For instance, imagine we have workforce data of a company with 562 employees working at 5 different levels. Two of these levels are non-managerial and the three others are managerial levels.
+For instance, imagine we have workforce data of a company with 562 employees working at 3 different levels. One level is non-managerial and the two others are managerial levels.
 So, we can check if there is statistically significant relationship between gender and managerial position. It is like calculating the frequency of men and women in the company and then see whether they are in managerial or non-managerial roles. 
 By combining these two dimensions, we have four categories:
 
@@ -36,7 +36,9 @@ where:
 
 then the chi-squared statistic checked against a distribution with known properties along with the degrees of freedom, calculated as (r-1)(c-1) where r and c are our data dimensions, to find the p-value. 
 
-*** Explanation of the example
+***Explanation of the example for binary DV***
+
+***Explanation of the example for non-binary categorical DV***
 
 The chi-square analysis is used when the relationship between two categorical variables is analyzed. For more than two categorical variables, loglinear analysis should be done. 
 
@@ -44,6 +46,6 @@ The chi-square analysis is used when the relationship between two categorical va
 
 ## Logistic Regression Analysis
 
-Logistic regression is used when the DV is binary.
+Logistic regression is used when the DV is binary. 
 
 [Back to the Table of Contents](#table-of-contents)
