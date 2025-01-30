@@ -46,3 +46,42 @@ chisq.test(GenderByManager)
 
 #p-value = 5.292e-12 which shows the difference between genders across roles is statistically significant
 
+## we can also extend the analysis to more than two categories in the DV
+  # focusing now on position rather than managerial level
+
+# Frequency cross-tabulation
+GenderByPosition <- table(Data$gender,
+                         Data$position)
+GenderByPosition
+
+# Computing the Chi-square test
+chisq.test(GenderByPosition)
+
+# again the low p-value (2.749e-12) shows there is a significant relationship between gender and position
+
+# so, to interpret the results, we can look at the expected number of each gender across positions:
+chisq.test(GenderByPosition)$expected
+
+# and The strength of association can be measured using Cramer’s V
+  # it ranges from 0 (no association) to 1 (perfect association):
+library(rcompanion)
+cramerV(GenderByPosition)
+
+# Cramer’s V = 0.3078 suggests a moderate association
+
+# in order to explore which categories drive the difference, we can use pairwise comparisons:
+# Transpose the GenderByPosition table
+GenderByPosition_transposed <- t(GenderByPosition)
+pairwise_results <- pairwise.prop.test(GenderByPosition_transposed, p.adjust.method = "bonferroni")
+print(pairwise_results)
+kable(pairwise_results)
+# the results show that there is a statistically significant difference between operational vs. middle management, and between operational vs. top management.
+  # however, the difference between the two managerial levels is not statistically significant. 
+
+# it can be also seen visually the pattern across functions:
+
+barplot(GenderByPosition, beside = TRUE, legend = TRUE, col = c("red", "blue"),
+        main = "Gender Distribution by Position",
+        xlab = "Position", ylab = "Count",
+        ylim = c(0, max(GenderByPosition) + 10))
+
