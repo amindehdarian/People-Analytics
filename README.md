@@ -56,9 +56,8 @@ The method includes the following steps:
 
 The logistic regression model is defined as:
 
-\[
-P(Y) = \frac{1}{1+e^{-(b_0 + b_1X_{1i} + b_2X_{2i} + \dots + b_nX_{ni})}}
-\]
+$P(Y) = \frac{1}{1+e^{-(b_0 + b_1X_{1i} + b_2X_{2i} + \dots + b_nX_{ni})}}$
+
 
 where:
 - \( P(Y) \) is the probability of the event occurring
