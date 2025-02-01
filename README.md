@@ -56,15 +56,14 @@ The method includes the following steps:
 
 The logistic regression model is defined as:
 
-\[
-P(Y) = \frac{1}{1+e^{-(b_0 + b_1X_{1i} + b_2X_{2i} + \dots + b_nX_{ni})}}
-\]
+$P(Y) = \frac{1}{1+e^{-(b_0 + b_1X_{1i} + b_2X_{2i} + \dots + b_nX_{ni})}}$
+
 
 where:
-- \( P(Y) \) is the probability of the event occurring
-- \( b_0 \) is the intercept
-- \( b_1, b_2, \dots, b_n \) are the coefficients
-- \( X_{1i}, X_{2i}, \dots, X_{ni} \) are the predictor variables
+- **P(Y)**: Probability of the event occurring
+- **b0**: Intercept
+- **b1, b2, ..., bn**: Coefficients
+- **X1, X2, ..., Xn**: Predictor variables
 
 
 
