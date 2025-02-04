@@ -123,8 +123,35 @@ Looking at the Odds Ratios:
 - The **Likelihood Ratio Test (p = 0.0277)** suggests that the model provides **some improvement** over a null (intercept-only) model, but the effect is **not strong**.
 - Overall, the model fit is **weak**, meaning more predictive variables or interactions might be needed to improve accuracy.
 
+[Back to the Table of Contents](#table-of-contents)
 
+## Survival analysis
 
+Also known as event history analysis and duration analysis, it calculates the expected amount of time until an event occurs.
+Here again the DV is categorical, and the IVs are either categorical or continuous.  
+Some examples of events are:
+- survival of patients after taking a medicine
+- tenure of employees in an organization
+- factors explaining newcomers stay in the company
+
+In survival analysis, not all cases enter and leave the analysis at the same time or event during the analysis .
+In this respect, the censored cases are the ones for whom the event or hazard (e.g. death or departure) didn't occur within the duration of the observation.  
+
+Three methods of survival analysis:
+###Life tables
+- Subdivides the duration of the study into smaller time periods.
+- The probability of the event occurring during each time period is then estimated. 
+- Used much less than Kaplan-Meier.
+- Mainly used for large samples.
+
+###Kaplan-Meier
+- Calculates the nonparametric estimates of survival and the hazard rates.
+- Logrank tests are calculated and provide the parametric and randomization test significance levels.
+- can be used when the data is non-parametric. 
+
+###Cox regression analysis
+- similar to logistic regression analysis
+- it shows the changes in probability of the event occurring over time in relation to a change in one unit of the independent variable.
 
 
 
