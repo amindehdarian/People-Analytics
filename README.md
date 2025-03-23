@@ -141,6 +141,7 @@ In survival analysis, not all cases enter and leave the analysis at the same tim
 In this respect, the censored cases are the ones for whom the event or hazard (e.g. death or departure) didn't occur within the duration of the observation.  
 
 Three methods of survival analysis:
+
 **Life tables**
 - Subdivides the duration of the study into smaller time periods.
 - The probability of the event occurring during each time period is then estimated. 
