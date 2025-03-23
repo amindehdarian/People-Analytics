@@ -153,7 +153,13 @@ Three methods of survival analysis:
 - similar to logistic regression analysis
 - it shows the changes in probability of the event occurring over time in relation to a change in one unit of the independent variable.
 
+####Example: Survival Analysis of Employee Turnover
+The primary objective of this example is to understand the factors influencing employee retention and departure by analyzing survival times (length of service) and leaver status. Additionally, it evaluates the impact of gender on job tenure and visualizes survival curves to identify significant differences between groups.
 
+...
+
+#####Results
+The analysis reveals that male employees tend to have longer job tenure compared to females, and the difference in survival patterns between genders is statistically significant. The survival curves and statistical tests provide insights into factors impacting employee retention.
 
 
 
