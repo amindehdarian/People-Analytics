@@ -9,7 +9,7 @@ In this part, a review of tools and methods is provided with code examples for e
 ## Table of Contents
 - [Chi-square analysis](#chi-square-analysis)
 - [Logistic Regression Analysis](#logistic-regression-analysis)
-- [survival analysis](#survival-analysis)
+- [Survival analysis](#survival-analysis)
 
 ## Chi-square analysis
 When both Dependent Variable (DV) and the Independent Variable (IV) are categorical (binary, nominal or ordinal), and there is only one IV, then Chi-square analysis is used.
