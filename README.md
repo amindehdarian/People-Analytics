@@ -70,6 +70,8 @@ where:
 
 When the DV is binary, then the analysis is called a binary logistic regression. If it is not binary, then we have a multinomial logistic regression. 
 
+### Example
+
 In the example, we want to predict if recommending working for a company (collected through a survey) is based on gender or position in the company.
 - Gender is binary (male-female)
 - Position has five levels (one operational level and four managerial levels - junior, middle, upper, top)
@@ -110,7 +112,7 @@ Looking at the Odds Ratios:
 
 **Note:** Only `Gender (Male)` has a significant effect (p = 0.0473). The Odds Ratios for Position categories are **not statistically significant** and should be interpreted with caution.
 
-### Model Fit Statistics
+#### Model Fit Statistics
 
 | Metric                            | Value  | Interpretation |
 |----------------------------------|--------|---------------|
@@ -139,27 +141,27 @@ In survival analysis, not all cases enter and leave the analysis at the same tim
 In this respect, the censored cases are the ones for whom the event or hazard (e.g. death or departure) didn't occur within the duration of the observation.  
 
 Three methods of survival analysis:
-###Life tables
+**Life tables**
 - Subdivides the duration of the study into smaller time periods.
 - The probability of the event occurring during each time period is then estimated. 
 - Used much less than Kaplan-Meier.
 - Mainly used for large samples.
 
-###Kaplan-Meier
+**Kaplan-Meier**
 - Calculates the nonparametric estimates of survival and the hazard rates.
 - Logrank tests are calculated and provide the parametric and randomization test significance levels.
 - can be used when the data is non-parametric. 
 
-###Cox regression analysis
+**Cox regression analysis**
 - similar to logistic regression analysis
 - it shows the changes in probability of the event occurring over time in relation to a change in one unit of the independent variable.
 
-####Example: Survival Analysis of Employee Turnover
+#### Example: Survival Analysis of Employee Turnover
 The primary objective of this example is to understand the factors influencing employee retention and departure by analyzing survival times (length of service) and leaver status. Additionally, it evaluates the impact of gender on job tenure and visualizes survival curves to identify significant differences between groups.
 
 ...
 
-#####Results
+**Results**
 The analysis reveals that male employees tend to have longer job tenure compared to females, and the difference in survival patterns between genders is statistically significant. The survival curves and statistical tests provide insights into factors impacting employee retention.
 
 
