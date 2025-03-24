@@ -128,43 +128,69 @@ Looking at the Odds Ratios:
 
 [Back to the Table of Contents](#table-of-contents)
 
-## Survival analysis
+## Survival Analysis
 
-Also known as event history analysis and duration analysis, it calculates the expected amount of time until an event occurs.
-Here again the DV is categorical, and the IVs are either categorical or continuous.  
-Some examples of events are:
-- survival of patients after taking a medicine
-- tenure of employees in an organization
-- factors explaining newcomers stay in the company
+Also known as event history analysis and duration analysis, it calculates the expected amount of time until an event occurs. In survival analysis, the dependent variable (DV) is categorical, while the independent variables (IVs) can be either categorical or continuous.
 
-In survival analysis, not all cases enter and leave the analysis at the same time or event during the analysis .
-In this respect, the censored cases are the ones for whom the event or hazard (e.g. death or departure) didn't occur within the duration of the observation.  
+### Key Concepts and Use Cases
+Some examples of events analyzed through survival analysis include:
+- Survival of patients after taking a medicine
+- Tenure of employees in an organization
+- Factors explaining newcomers' stay in the company
 
-Three methods of survival analysis:
+In survival analysis, not all cases enter and leave the analysis at the same time or event during the analysis. In this respect, the censored cases are the ones for whom the event or hazard (e.g., death or departure) did not occur within the duration of the observation.
 
-**Life tables**
+### Methods of Survival Analysis
+
+**Life Tables**
 - Subdivides the duration of the study into smaller time periods.
-- The probability of the event occurring during each time period is then estimated. 
-- Used much less than Kaplan-Meier.
+- Estimates the probability of the event occurring during each time period.
 - Mainly used for large samples.
+- Less commonly used than Kaplan-Meier.
 
-**Kaplan-Meier**
-- Calculates the nonparametric estimates of survival and the hazard rates.
-- Logrank tests are calculated and provide the parametric and randomization test significance levels.
-- can be used when the data is non-parametric. 
+**Kaplan-Meier (KM)**
+- Calculates nonparametric estimates of survival and hazard rates.
+- Uses log-rank tests to assess statistical significance between groups.
+- Suitable for non-parametric data.
+- Visualizes survival distribution using step functions.
 
-**Cox regression analysis**
-- similar to logistic regression analysis
-- it shows the changes in probability of the event occurring over time in relation to a change in one unit of the independent variable.
+**Cox Regression Analysis**
+- Similar to logistic regression analysis.
+- Estimates the hazard ratio to show how changes in independent variables affect the likelihood of the event over time.
 
-#### Example: Survival Analysis of Employee Turnover
-The primary objective of this example is to understand the factors influencing employee retention and departure by analyzing survival times (length of service) and leaver status. Additionally, it evaluates the impact of gender on job tenure and visualizes survival curves to identify significant differences between groups.
+---
+### Example: Survival Analysis of Employee Turnover
 
-...
+The primary objective of this example is to understand factors influencing employee retention and turnover by analyzing survival times (length of service) and leaver status. Additionally, it evaluates the impact of gender on job tenure and visualizes survival curves to identify significant differences between groups.
 
-**Results**
-The analysis reveals that male employees tend to have longer job tenure compared to females, and the difference in survival patterns between genders is statistically significant. The survival curves and statistical tests provide insights into factors impacting employee retention.
+#### **Steps of Analysis**
+1. **Data Loading and Preprocessing:** Load the CSV file, convert variables to factors, and inspect data distributions.
+2. **Overall Survival Analysis:** Calculate the overall survival curve using Kaplan-Meier.
+3. **Gender-Based Survival Analysis:** Generate separate survival curves for males and females.
+4. **Statistical Testing (Log-Rank Test):** Assess whether survival distributions differ significantly between genders.
+5. **Visualization:** Plot survival curves and annotate gender differences.
 
+#### **Results**
+The analysis reveals that male employees tend to have longer job tenure compared to females. The difference in survival patterns between genders is statistically significant, as indicated by the log-rank test (p < 0.001). This suggests that gender is an influential factor in employee retention. The survival curves and statistical tests provide valuable insights into factors impacting employee tenure.
+
+#### **Key Outputs and Interpretations**
+- **Overall Mean Survival Time:** 32.7 years
+- **Male Mean Survival Time:** 35.9 years
+- **Female Mean Survival Time:** 29.1 years
+- **Log-Rank Test Result:** Chi-squared = 21.6 on 1 degree of freedom (p = 3e-06)
+  - This highly significant result indicates that male employees have statistically significantly longer job tenure than females.
+
+#### **Visualization**
+The survival analysis results are presented in the following plots:
+
+1. **Overall Survival Distribution:** This plot shows the overall survival curve for employee tenure without considering gender differences. It illustrates the probability of survival (job retention) over time.
+![Survival Distribution (overall)](images/survival1.png)
+
+2. **Gender-Based Survival Distribution:** This plot shows separate survival curves for male and female employees, highlighting the differences in job tenure between genders. The male survival curve consistently remains higher than the female curve, indicating longer average tenure for males.
+![Survival Distribution by Gender](images/survival2.png)
+
+#### **Conclusion**
+This survival analysis effectively highlights the differences in job tenure between male and female employees. Understanding these differences can support targeted retention strategies and inform HR policies aimed at reducing turnover.
 
 
 
